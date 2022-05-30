@@ -1,0 +1,13 @@
+.connect {
+    -fx-font: 12px;
+    -fx-color: black;
+    -fx-padding: 10;
+    -fx-background-color: #00a6d6;
+}
+
+.generate {
+    -fx-font: 12px;
+    -fx-color: black;
+    -fx-padding: 10;
+    -fx-background-color: #00a6d6;
+}

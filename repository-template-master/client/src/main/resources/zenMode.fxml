@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DBF3FA;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.ZenModeController">
+   <children>
+      <Button id="arrow" layoutX="8.0" layoutY="358.0" mnemonicParsing="false" onAction="#goBackToLecturerView" prefHeight="34.0" prefWidth="48.0" style="-fx-background-insets: 0 0 -1 0, 0; -fx-padding: 0.25em; -fx-shape: &quot;M 0 -3.5 v 7 l 4 -3.5 z&quot;; -fx-rotate: 180; -fx-background-color: #00a6d6;" />
+      <ListView fx:id="questionList" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="576.0" />
+   </children>
+</AnchorPane>

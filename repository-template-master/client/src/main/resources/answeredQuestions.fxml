@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DBF3FA;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.AnsweredQuestionsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6d6" height="49.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="574.0" />
+      <Label layoutX="216.0" layoutY="23.0" prefHeight="32.0" prefWidth="212.0" text="ANSWERED QUESTIONS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="8.0" layoutY="358.0" mnemonicParsing="false" onAction="#goBackToUserViewController" prefHeight="34.0" prefWidth="48.0" style="-fx-background-insets: 0 0 -1 0, 0; -fx-padding: 0.25em; -fx-shape: &quot;M 0 -3.5 v 7 l 4 -3.5 z&quot;; -fx-rotate: 180; -fx-background-color: #00a6d6;" />
+      <ListView fx:id="answeredList" layoutX="14.0" layoutY="76.0" prefHeight="272.0" prefWidth="574.0" />
+   </children>
+</AnchorPane>

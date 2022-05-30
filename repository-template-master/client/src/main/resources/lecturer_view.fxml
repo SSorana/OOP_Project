@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DBF3FA;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.LecturerViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6d6" height="392.0" layoutX="2.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 40px; -fx-arc-width: 40px;" width="105.0" />
+      <Label layoutX="6.0" layoutY="26.0" prefHeight="18.0" prefWidth="50.0" text="Room:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button id="Export" fx:id="exportButton" layoutX="15.0" layoutY="227.0" mnemonicParsing="false" onAction="#goToExportQuestions" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #f1be3e; -fx-background-radius: 50px; -fx-border-color: black; -fx-border-radius: 50px;" text="Export">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button id="Zen" fx:id="zenButton" layoutX="15.0" layoutY="273.0" mnemonicParsing="false" onAction="#goToZenMode" prefHeight="27.0" prefWidth="78.0" style="-fx-border-color: black; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: #f1be3e;" text="Zen">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button id="Answered" layoutX="15.0" layoutY="315.0" mnemonicParsing="false" onAction="#goToAnsweredQuestions" prefHeight="27.0" prefWidth="78.0" style="-fx-border-radius: 50px; -fx-background-radius: 50px; -fx-border-color: black; -fx-background-color: #f1be3e;" text="Answered">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button id="closed" fx:id="closeButton" layoutX="16.0" layoutY="357.0" mnemonicParsing="false" onAction="#closeTheApplication" prefHeight="27.0" prefWidth="78.0" style="-fx-border-color: black; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-background-color: #c3312f;" text="Close">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6d6" height="50.0" layoutX="118.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="477.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6d6" height="336.0" layoutX="118.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 50px; -fx-arc-width: 50px;" width="477.0" />
+      <TextField fx:id="chatBox" layoutX="135.0" layoutY="357.0" onAction="#sendQuestion" prefHeight="35.0" prefWidth="446.0" />
+      <TextField fx:id="moderatorLink" layoutX="135.0" layoutY="17.0" prefHeight="26.0" prefWidth="215.0" text="Moderator Link" />
+      <TextField fx:id="studentLink" layoutX="356.0" layoutY="17.0" prefHeight="26.0" prefWidth="224.0" text="Student Link" />
+      <Label fx:id="roomNameLabel" layoutX="6.0" layoutY="46.0" prefHeight="27.0" prefWidth="82.0" text="RoomName" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="participantsLabel" layoutX="6.0" layoutY="102.0" prefHeight="27.0" prefWidth="82.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+
+      <ListView fx:id="lecturerChat" layoutX="135.0" layoutY="46.0" prefHeight="259.0" prefWidth="446.0" />
+      
+      <Button fx:id="markAsAnswered" layoutX="135.0" layoutY="308.0" mnemonicParsing="false" onAction="#markAsAnswered" style="-fx-background-color: #99d28c; -fx-border-color: black;" text="Answer Question">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="banUser" layoutX="514.0" layoutY="308.0" mnemonicParsing="false" onAction="#banUser" style="-fx-background-color: #c3312f; -fx-border-color: black;" text="Ban User">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteQuestion" layoutX="308.0" layoutY="308.0" mnemonicParsing="false" onAction="#deleteQuestion" style="-fx-background-color: #c3312f; -fx-border-color: Black;" text="Delete">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="edit" layoutX="258.0" layoutY="308.0" mnemonicParsing="false" onAction="#editQuestion" style="-fx-background-color: #f1be3e; -fx-border-color: black;" text="Edit">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="135.0" layoutY="4.0" prefHeight="18.0" prefWidth="105.0" text="Moderator Link" />
+      <Label layoutX="356.0" layoutY="4.0" prefHeight="18.0" prefWidth="105.0" text="Student Link" />
+   </children>
+</AnchorPane>
